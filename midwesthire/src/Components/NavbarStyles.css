@@ -1,0 +1,126 @@
+.NavbarItems{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.navbar-logo{
+    padding-left: 35px;
+    cursor: pointer;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+.NavbarItems i {
+    padding-right: 5px;
+}
+.NavbarItems a {
+    padding: .5em .8em;
+    color: #27272a;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+  
+.NavbarItems a::before, .NavbarItems a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+  
+.NavbarItems a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #fcd34d;
+    border-right: 3px solid #fcd34d;
+    transform: translate(-100%, 50%);
+}
+.NavbarItems a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #fcd34d;
+    border-left: 3px solid #fcd34d;
+    transform: translate(100%, -50%)
+}
+.NavbarItems a:hover:before, .NavbarItems a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+  
+.NavbarItems a:hover {
+    color: #fcd34d;
+ }
+.menu-icons {
+    display: none;
+}
+
+@media screen and (max-width: 850px){
+    .NavbarItems {
+        z-index: 99;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Added property */
+        background-color: #22d3ee;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 30px;
+    }
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-links {
+        text-align: center;
+        display:block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+    }
+    .nav-links i{
+        width: 2rem;
+        justify-content: start;
+        padding-right: 5px;
+    }
+    nav-links:hover {
+        background-color: #bfdbfe;
+        transition: none;
+    }
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+        
+    }
+    .menu-icons i{
+        font-size: 1.5rem;
+        color: #222;
+    }
+}
