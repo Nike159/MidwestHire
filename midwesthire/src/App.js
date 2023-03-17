@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Landing from './Components/Landing';
 import './app.css';
 
+
 function App() {
   return (
     <div className="App">

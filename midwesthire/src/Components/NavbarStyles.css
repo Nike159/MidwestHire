@@ -4,13 +4,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    width: 95%;
+    width: 100%;
     height: 80px;
     border-radius: 13px;
-    position: fixed;
     top: 20px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 9999;
 }
 .navbar-logo{
     padding-left: 35px;
@@ -28,7 +28,7 @@
 }
 .NavbarItems a {
     padding: .5em .8em;
-    color: #27272a;
+    color: white;
     position: relative;
     text-decoration: none;
     font-size: 20px;
@@ -80,7 +80,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; /* Added property */
+        align-items: center; 
         background-color: #22d3ee;
         width: 100%;
         position: absolute;
@@ -88,7 +88,6 @@
         left: -100%;
         opacity: 0;
         padding: 80px 0 30px 0;
-        margin: 0;
         transition: 0.3s ease-in-out;
         border-radius: 30px;
     }
@@ -110,10 +109,7 @@
         justify-content: start;
         padding-right: 5px;
     }
-    nav-links:hover {
-        background-color: #bfdbfe;
-        transition: none;
-    }
+
     .menu-icons{
         display: block;
         cursor: pointer;
