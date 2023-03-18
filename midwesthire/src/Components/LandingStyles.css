@@ -1,5 +1,15 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+
 .content {
   height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5))
 }
 .text-content {
   position: absolute;
@@ -10,8 +20,18 @@
   background: gray;
   color: white;
   border-radius: 20px;
-  font-size: 50px;
+  font-size: 80px;
 }
-.hi {
+.About {
+  font-size: 60px;
+  padding: 2rem;
+  color: white;
+  background-color: gray;
+}
+.AboutContainer {
+  width: 100%;
   height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5))
 }
