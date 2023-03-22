@@ -30,7 +30,7 @@ class Navbar extends Component{
                         <a className='nav-links' href="/home"><i class="fa-solid fa-house"></i>Home</a>
                     </li>
                     <li>                        
-                        <a className='nav-links' href="/about"><i class="fa-solid fa-user"></i>About</a>
+                        <a className='nav-links' href="#AboutContainer"><i class="fa-solid fa-user"></i>About</a>
                     </li>
                     <li>
                        <a className='nav-links' href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
