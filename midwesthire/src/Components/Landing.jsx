@@ -2,7 +2,7 @@ import React from 'react'
 import "./LandingStyles.css";
 import {Parallax} from 'react-parallax'
 import LandingImg from '../Assets/Landing.jpg';
-import About from '../Assets/About.jpg';
+
 
 function Landing() {
   return (
@@ -16,17 +16,6 @@ function Landing() {
           </div>
         </div>
       </Parallax>
-
-      <Parallax strength={-600} bgImage={LandingImg} >
-      <section className='AboutContainer' id='about'>
-        <div className='divy'>
-          <h1 className='About'>Who We Are</h1>
-          <p className='AboutText'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, adipisci? Nesciunt unde excepturi eaque nisi cumque, nulla laudantium tempora facere animi obcaecati deserunt totam voluptatem tenetur vero recusandae necessitatibus ad!</p>
-        </div>
-
-
-      </section>
-    </Parallax>
 
   </div>
   )
