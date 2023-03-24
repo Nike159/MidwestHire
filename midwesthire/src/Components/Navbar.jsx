@@ -1,6 +1,10 @@
 import logo from '../Assets/Logo.png';
 import "./NavbarStyles.css";
 import { Component } from "react";
+import { Link } from "react-scroll";
+
+
+
 
 
 const Logo = () => {
@@ -26,17 +30,33 @@ class Navbar extends Component{
                     <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
                 <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-                    <li>                        
-                        <a className='nav-links' href="/home"><i class="fa-solid fa-house"></i>Home</a>
-                    </li>
-                    <li>                        
-                        <a className='nav-links' href="#AboutContainer"><i class="fa-solid fa-user"></i>About</a>
-                    </li>
-                    <li>
-                       <a className='nav-links' href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                    <li> 
+                    <Link to="content" smooth={true} duration={100}>
+                        <a className='nav-links' href="#home">
+                            <i class="fa-solid fa-house"></i>Home
+                        </a>
+                    </Link>
                     </li>
                     <li>
-                        <a className='nav-links' href="/news"><i class="fa-solid fa-square-rss"></i>News</a>
+                    <Link to="aboutContainer" smooth={true} duration={100}>
+                        <a className='nav-links' href='#aboutContainer'>
+                            <i class="fa-solid fa-user"></i>About
+                        </a>
+                    </Link>
+                    </li>
+                    <li>
+                    <Link to="newsContainer" smooth={true} duration={100}>
+                        <a className='nav-links' href="#newsContainer">
+                            <i class="fa-solid fa-square-rss"></i>News
+                        </a>
+                    </Link>   
+                    </li>
+                    <li>
+                    <Link to="contactContainer" smooth={true} duration={100}>
+                        <a className='nav-links' href="#contactContainer">
+                            <i class="fa-solid fa-square-rss"></i>Contact
+                        </a>
+                    </Link>
                     </li>
                 </ul>
             </nav>

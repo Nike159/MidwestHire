@@ -27,7 +27,7 @@
 .NavbarItems i {
     padding-right: 5px;
 }
-.NavbarItems a {
+.nav-links {
     padding: .5em .8em;
     color: white;
     position: relative;
@@ -36,7 +36,7 @@
     
 }
   
-.NavbarItems a::before, .NavbarItems a::after {
+.nav-links::before, .nav-links::after {
     content: '';
     height: 14px;
     width: 14px;
@@ -45,7 +45,7 @@
     opacity: 0;
 }
   
-.NavbarItems a::before {
+.nav-links::before {
     content: '';
     right: 0;
     top: 0;
@@ -53,7 +53,7 @@
     border-right: 3px solid #fcd34d;
     transform: translate(-100%, 50%);
 }
-.NavbarItems a:after {
+.nav-links:after {
     content: '';
     left: 0;
     bottom: 0;
@@ -61,12 +61,12 @@
     border-left: 3px solid #fcd34d;
     transform: translate(100%, -50%)
 }
-.NavbarItems a:hover:before, .NavbarItems a:hover:after{
+.nav-links:hover:before, .nav-links:hover:after{
     transform: translate(0,0);
     opacity: 1;
 }
   
-.NavbarItems a:hover {
+.nav-links:hover {
     color: #fcd34d;
  }
 .menu-icons {
@@ -103,8 +103,8 @@
         text-align: center;
         display:block;
         width: 100%;
-        font-size: 1.2rem;
-        padding: 2rem 0;
+        font-size: 25px;
+
     }
     .nav-links i{
         width: 2rem;
