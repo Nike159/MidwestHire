@@ -14,16 +14,32 @@ const Logo = () => {
       </div>
     );
   };
-  
 class Navbar extends Component{
     state = { clicked: false };
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+      }
+    
+      handleScroll = () => {
+        if (window.scrollY > 0) {
+          this.setState({ scrolled: true });
+        } else {
+          this.setState({ scrolled: false });
+        }
+      };
+    
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked})
     }
+
     render(){     
         return(         
-            <nav className='NavbarItems'>
-                <div className='navbar-logo'>
+            <nav className={`NavbarItems ${this.state.scrolled ? "scrolled" : ""}`}>
+            <div className='navbar-logo'>
                     <Logo />
                 </div>
                 <div className="menu-icons" onClick={this.handleClick}>

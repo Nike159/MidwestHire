@@ -9,9 +9,11 @@
     border-radius: 13px;
     top: 20px;
     left: 50%;
-    background-color: #22d3ee;
     transform: translate(-50%);
     z-index: 1;
+}
+.scrolled {
+    background-color: #22d3ee;
 }
 .navbar-logo{
     padding-left: 35px;
