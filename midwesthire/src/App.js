@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar"
 import Landing from './Components/Landing';
 import About from "./Components/About";
 import { Element } from "react-scroll";
+import Contact from "./Components/Contact";
 
 
 
@@ -17,6 +18,10 @@ function App() {
 
       <Element id="aboutContainer">
         <About />
+      </Element>
+      
+      <Element id="contactContainer">
+        <Contact />
       </Element>
     </div>
   );

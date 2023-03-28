@@ -10,7 +10,7 @@ import { Link } from "react-scroll";
 const Logo = () => {
     return (
       <div className="logo">
-        <img src={logo} alt="Logo" style={{ height: "95px", width: "95px" }} />
+        <img src={logo} alt="Logo" style={{ height: "175px", width: "175px" }} />
       </div>
     );
   };

@@ -12,7 +12,7 @@ function Landing() {
           <div className='text-content'>
             <div className='title'>Midwest Hire</div>
             <p className='slogan'>We connect great companies with the perfect candidates.</p>
-            <button className='call'>Contact Us</button>
+            <a href='#contactContainer' className='call'>Contact Us</a>
           </div>
         </div>
       </Parallax>
