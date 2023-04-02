@@ -2,10 +2,12 @@ import React from 'react'
 import "./AboutStyles.css";
 import about from '../Assets/About.jpg'
 import Landing from '../Assets/Landing.jpg'
+import pic1 from '../Assets/pic1.jpg'
 
 function About() {
   return (
     <div className='aboutConatiner' id='aboutContainer'>
+
         <div className='aboutTitle'>Who Are We</div>
         <div className='aboutText'>MidWest Hire is a result-driven Chicago-based staffing agency with a nationwide reach. We are focused on matching clients with the todiv talent in the IT and healthcare fields. We provide staffing services for direct hire opportunities contract to hire, and project-based employment</div>
         <div className="infoContainer">
@@ -24,7 +26,7 @@ function About() {
                 <p className='aboutText'> Our Talent Acquisition agents can work together with you, and discuss opportunities with the best companies in the market. There are on-site and remote opportunities that you can choose from. Join our great network of professionals and sign up today. </p>
             </div>
             <div className='image'>
-                <img alt='img' src={about}/>
+                <img alt='img' src={pic1}/>
                 <img alt='img' src={Landing}/>
             </div>                           
         </div>
@@ -34,7 +36,7 @@ function About() {
                 <p className='aboutText'>At Midwest Hire, our focus is mainly on the Healthcare and IT industry. Let us work together so we can match you with the perfect candidate.</p>
             </div>
             <div className='image'>
-                <img alt='img' src={about}/>
+                <img alt='img' src={pic1}/>
                 <img alt='img' src={Landing}/>
             </div>                           
         </div>

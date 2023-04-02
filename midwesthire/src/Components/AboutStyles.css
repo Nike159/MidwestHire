@@ -1,6 +1,5 @@
 .aboutConatiner{
     padding: 4rem 2rem;
-
 }
 .aboutTitle {
     font-size: 3rem;
@@ -22,7 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 4.5rem;
     padding-bottom: 5rem;
 }
 .infoContainer-reverse{
@@ -54,6 +52,7 @@ h1{
     object-fit: cover;
     border-radius: 6px;
     box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    z-index: 9999;
 }
 .image img:nth-child(2){
     position: absolute;
