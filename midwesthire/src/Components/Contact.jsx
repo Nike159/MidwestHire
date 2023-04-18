@@ -4,7 +4,7 @@ import './ContactStyles.css'
 function Contact() {
   return (
     <div className='contactContainer' id='contactContainer'>
-        <form className="contact-box" action="https://formspree.io/f/moqzwzrv" method="POST">
+        <form className="contact-box" action="https://formspree.io/f/mdovynlp" method="POST">
             <div className='left'></div>
             <div className='right'>
                 <h2>Contact Us</h2>
@@ -12,7 +12,7 @@ function Contact() {
                 <input type="email" className="field" placeholder="Your Email" name="_replyto"></input>
                 <input type="phone" className="field" placeholder="Phone" name="Phone"></input>
                 <textarea placeholder="Message" className="field" name="message"></textarea>
-                <button className="contact-btn" type="submit">Send</button>
+                <button className="contact-btn" type="submit" >Send</button>
             </div>
         </form>
         

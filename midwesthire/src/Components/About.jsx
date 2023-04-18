@@ -3,6 +3,9 @@ import "./AboutStyles.css";
 import about from '../Assets/About.jpg'
 import Landing from '../Assets/Landing.jpg'
 import pic1 from '../Assets/pic1.jpg'
+import pic2 from '../Assets/pic2.jpg'
+import pic3 from '../Assets/pic3.jpg'
+import pic4 from '../Assets/pic4.jpg'
 
 function About() {
   return (
@@ -27,7 +30,7 @@ function About() {
             </div>
             <div className='image'>
                 <img alt='img' src={pic1}/>
-                <img alt='img' src={Landing}/>
+                <img alt='img' src={pic2}/>
             </div>                           
         </div>
         <div className="infoContainer2">
@@ -36,8 +39,8 @@ function About() {
                 <p className='aboutText'>At Midwest Hire, our focus is mainly on the Healthcare and IT industry. Let us work together so we can match you with the perfect candidate.</p>
             </div>
             <div className='image'>
-                <img alt='img' src={pic1}/>
-                <img alt='img' src={Landing}/>
+                <img alt='img' src={pic3}/>
+                <img alt='img' src={pic4}/>
             </div>                           
         </div>
     </div>
